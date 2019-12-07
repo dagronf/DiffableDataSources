@@ -36,3 +36,4 @@ Carthage/*
 
 ## Swift Package Manager
 .build
+contents.xcworkspacedata
