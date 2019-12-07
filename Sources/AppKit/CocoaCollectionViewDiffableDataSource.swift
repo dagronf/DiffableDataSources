@@ -10,6 +10,12 @@ open class CocoaCollectionViewDiffableDataSource<SectionIdentifierType: Hashable
     /// The type of closure providing the item.
     public typealias ItemProvider = (NSCollectionView, IndexPath, ItemIdentifierType) -> NSCollectionViewItem?
 
+    /// The type of closure providing the supplementary view for element of kind.
+    public typealias SupplementaryViewProvider = (NSCollectionView, String, IndexPath) -> NSView?
+
+    /// A closure to dequeue the views for element of kind.
+    public var supplementaryViewProvider: SupplementaryViewProvider?
+
     private weak var collectionView: NSCollectionView?
     private let itemProvider: ItemProvider
     private let core = DiffableDataSourceCore<SectionIdentifierType, ItemIdentifierType>()
@@ -110,6 +116,23 @@ open class CocoaCollectionViewDiffableDataSource<SectionIdentifierType: Hashable
 
         return item
     }
+
+    /// Returns a supplementary view for element of kind at specified index path.
+    ///
+    /// - Parameters:
+    ///   - collectionView: A collection view instance managed by `self`.
+    ///   - kind: The kind of element to be display.
+    ///   - indexPath: An index path for supplementary view.
+    ///
+    /// - Returns: A supplementary view for element of kind at specified index path.
+    public func collectionView(_ collectionView: NSCollectionView, viewForSupplementaryElementOfKind kind: NSCollectionView.SupplementaryElementKind, at indexPath: IndexPath) -> NSView {
+        guard let view = supplementaryViewProvider?(collectionView, kind, indexPath) else {
+            return NSView()
+        }
+
+        return view
+    }
+
 }
 
 #endif
