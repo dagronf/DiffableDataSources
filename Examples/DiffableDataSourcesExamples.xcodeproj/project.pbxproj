@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23F8EDB8269EB9480061FE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8EDB7269EB9480061FE7C /* AppDelegate.swift */; };
+		23F8EDBA269EB9490061FE7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F8EDB9269EB9490061FE7C /* Assets.xcassets */; };
+		23F8EDBD269EB9490061FE7C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F8EDBB269EB9490061FE7C /* MainMenu.xib */; };
+		23F8EDC3269EB9500061FE7C /* DiffableDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8EDC1269EB9500061FE7C /* DiffableDataSources.framework */; };
+		23F8EDC4269EB9500061FE7C /* DiffableDataSources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8EDC1269EB9500061FE7C /* DiffableDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23F8EDC5269EB9500061FE7C /* DifferenceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8EDC2269EB9500061FE7C /* DifferenceKit.framework */; };
+		23F8EDC6269EB9500061FE7C /* DifferenceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8EDC2269EB9500061FE7C /* DifferenceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23F8EDC9269EC5C20061FE7C /* MountainsRawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B46555722B6AB15005202D1 /* MountainsRawData.swift */; };
 		6B02216222BA0EF500AEB14D /* InsertionSortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B02216122BA0EF500AEB14D /* InsertionSortViewController.swift */; };
 		6B02216422BA11D500AEB14D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B02216322BA11D500AEB14D /* Extension.swift */; };
 		6B02216622BA177F00AEB14D /* InsertionSortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B02216522BA177F00AEB14D /* InsertionSortViewController.xib */; };
@@ -37,6 +45,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		23F8EDC7269EB9510061FE7C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23F8EDC6269EB9500061FE7C /* DifferenceKit.framework in Embed Frameworks */,
+				23F8EDC4269EB9500061FE7C /* DiffableDataSources.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BA3A79222B55FB000AD51ED /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,6 +84,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		23F8EDAA269EB8FE0061FE7C /* DiffableDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiffableDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F8EDAB269EB8FE0061FE7C /* DifferenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DifferenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F8EDB5269EB9480061FE7C /* Example-macOS-tableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-macOS-tableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F8EDB7269EB9480061FE7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23F8EDB9269EB9490061FE7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23F8EDBC269EB9490061FE7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		23F8EDC1269EB9500061FE7C /* DiffableDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DiffableDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23F8EDC2269EB9500061FE7C /* DifferenceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DifferenceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B02216122BA0EF500AEB14D /* InsertionSortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortViewController.swift; sourceTree = "<group>"; };
 		6B02216322BA11D500AEB14D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		6B02216522BA177F00AEB14D /* InsertionSortViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InsertionSortViewController.xib; sourceTree = "<group>"; };
@@ -93,6 +121,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		23F8EDB2269EB9480061FE7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F8EDC5269EB9500061FE7C /* DifferenceKit.framework in Frameworks */,
+				23F8EDC3269EB9500061FE7C /* DiffableDataSources.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BA3A79622B69EDF00AD51ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +151,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23F8EDB6269EB9480061FE7C /* Example-macOS-tableView */ = {
+			isa = PBXGroup;
+			children = (
+				23F8EDB7269EB9480061FE7C /* AppDelegate.swift */,
+				23F8EDB9269EB9490061FE7C /* Assets.xcassets */,
+				23F8EDBB269EB9490061FE7C /* MainMenu.xib */,
+			);
+			path = "Example-macOS-tableView";
+			sourceTree = "<group>";
+		};
 		6BA3A79A22B69EDF00AD51ED /* Example-macOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +181,7 @@
 			children = (
 				6BB7630522B545240050DC03 /* Example-iOS */,
 				6BA3A79A22B69EDF00AD51ED /* Example-macOS */,
+				23F8EDB6269EB9480061FE7C /* Example-macOS-tableView */,
 				6BB7630422B545240050DC03 /* Products */,
 				6BB7632122B5467B0050DC03 /* Frameworks */,
 			);
@@ -144,6 +192,7 @@
 			children = (
 				6BB7630322B545240050DC03 /* Example-iOS.app */,
 				6BA3A79922B69EDF00AD51ED /* Example-macOS.app */,
+				23F8EDB5269EB9480061FE7C /* Example-macOS-tableView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +221,10 @@
 		6BB7632122B5467B0050DC03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23F8EDC1269EB9500061FE7C /* DiffableDataSources.framework */,
+				23F8EDC2269EB9500061FE7C /* DifferenceKit.framework */,
+				23F8EDAA269EB8FE0061FE7C /* DiffableDataSources.framework */,
+				23F8EDAB269EB8FE0061FE7C /* DifferenceKit.framework */,
 				6BA3A77B22B549B700AD51ED /* DiffableDataSources.framework */,
 				6BA3A77D22B549B700AD51ED /* DifferenceKit.framework */,
 			);
@@ -181,6 +234,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		23F8EDB4269EB9480061FE7C /* Example-macOS-tableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23F8EDBE269EB9490061FE7C /* Build configuration list for PBXNativeTarget "Example-macOS-tableView" */;
+			buildPhases = (
+				23F8EDB1269EB9480061FE7C /* Sources */,
+				23F8EDB2269EB9480061FE7C /* Frameworks */,
+				23F8EDB3269EB9480061FE7C /* Resources */,
+				23F8EDC7269EB9510061FE7C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example-macOS-tableView";
+			productName = "Example-macOS-tableView";
+			productReference = 23F8EDB5269EB9480061FE7C /* Example-macOS-tableView.app */;
+			productType = "com.apple.product-type.application";
+		};
 		6BA3A79822B69EDF00AD51ED /* Example-macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BA3A7A822B69EE200AD51ED /* Build configuration list for PBXNativeTarget "Example-macOS" */;
@@ -223,10 +294,13 @@
 		6BB762FB22B545240050DC03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Ryo Aoyama";
 				TargetAttributes = {
+					23F8EDB4269EB9480061FE7C = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					6BA3A79822B69EDF00AD51ED = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -250,11 +324,21 @@
 			targets = (
 				6BB7630222B545240050DC03 /* Example-iOS */,
 				6BA3A79822B69EDF00AD51ED /* Example-macOS */,
+				23F8EDB4269EB9480061FE7C /* Example-macOS-tableView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		23F8EDB3269EB9480061FE7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F8EDBA269EB9490061FE7C /* Assets.xcassets in Resources */,
+				23F8EDBD269EB9490061FE7C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BA3A79722B69EDF00AD51ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +364,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		23F8EDB1269EB9480061FE7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F8EDB8269EB9480061FE7C /* AppDelegate.swift in Sources */,
+				23F8EDC9269EC5C20061FE7C /* MountainsRawData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BA3A79522B69EDF00AD51ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -308,6 +401,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		23F8EDBB269EB9490061FE7C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23F8EDBC269EB9490061FE7C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		6BA3A7A122B69EE200AD51ED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -327,6 +428,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		23F8EDBF269EB9490061FE7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Ryo Aoyama. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darrenford.diffable-table-source.Example-macOS-tableView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		23F8EDC0269EB9490061FE7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3L6RK3LGGW;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Ryo Aoyama. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.darrenford.diffable-table-source.Example-macOS-tableView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		6BA3A7A622B69EE200AD51ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -540,6 +703,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		23F8EDBE269EB9490061FE7C /* Build configuration list for PBXNativeTarget "Example-macOS-tableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23F8EDBF269EB9490061FE7C /* Debug */,
+				23F8EDC0269EB9490061FE7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6BA3A7A822B69EE200AD51ED /* Build configuration list for PBXNativeTarget "Example-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

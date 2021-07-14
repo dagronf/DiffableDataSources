@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235D4886269EB546003965E9 /* CocoaTableViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D4885269EB546003965E9 /* CocoaTableViewDiffableDataSource.swift */; };
 		6B41587222B5210500183AA2 /* TableViewDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B41587122B5210500183AA2 /* TableViewDiffableDataSource.swift */; };
 		6B46555C22B6BC81005202D1 /* HashableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B46555B22B6BC81005202D1 /* HashableExtension.swift */; };
 		6B46555E22B7F904005202D1 /* UniversalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B46555D22B7F904005202D1 /* UniversalError.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		235D4885269EB546003965E9 /* CocoaTableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaTableViewDiffableDataSource.swift; sourceTree = "<group>"; };
 		6B41587122B5210500183AA2 /* TableViewDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDiffableDataSource.swift; sourceTree = "<group>"; };
 		6B46555B22B6BC81005202D1 /* HashableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableExtension.swift; sourceTree = "<group>"; };
 		6B46555D22B7F904005202D1 /* UniversalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalError.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				6BA3A7B022B6A5CE00AD51ED /* CocoaCollectionViewDiffableDataSource.swift */,
+				235D4885269EB546003965E9 /* CocoaTableViewDiffableDataSource.swift */,
 			);
 			path = AppKit;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				6BA3A78022B54DA400AD51ED /* CollectionViewDiffableDataSource.swift in Sources */,
 				6BB762EC22B455520050DC03 /* DiffableDataSourceSnapshot.swift in Sources */,
 				6B46555E22B7F904005202D1 /* UniversalError.swift in Sources */,
+				235D4886269EB546003965E9 /* CocoaTableViewDiffableDataSource.swift in Sources */,
 				6BA3A7B122B6A5CE00AD51ED /* CocoaCollectionViewDiffableDataSource.swift in Sources */,
 				6BB762EB22B455520050DC03 /* SnapshotStructure.swift in Sources */,
 				6BA3A79422B5A35F00AD51ED /* DiffableDataSourceCore.swift in Sources */,

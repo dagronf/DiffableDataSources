@@ -97,6 +97,9 @@ final class DiffableDataSourceCore<SectionIdentifierType: Hashable, ItemIdentifi
     }
 
     func numberOfItems(inSection section: Int) -> Int {
-        return sections[section].elements.count
+        if section < numberOfSections() {
+            return sections[section].elements.count
+        }
+        return 0
     }
 }
